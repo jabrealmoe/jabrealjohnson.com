@@ -71,7 +71,8 @@
               "browserTarget": "jabrealjohnson.com:build:production"
             },
             "development": {
-              "browserTarget": "jabrealjohnson.com:build:development"
+              "browserTarget": "jabrealjohnson.com:build:development",
+              "port": 4176
             }
           },
           "defaultConfiguration": "development"
