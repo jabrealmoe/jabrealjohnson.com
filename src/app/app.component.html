@@ -8,15 +8,69 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<nav class="navjj">
-<ul class="nav-list">
-  <li class="nav-item"><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFoalcIHMZEYK4qTbpKbJMT_A3xbH32TwJbTHbtZLxowwC2pB3d9h-Zvl374gvUFIyCbI&usqp=CAU" height="70"></a> </li>
-  <li class="nav-item"><a href="#" routerLink="/">About</a> </li>
-  <li class="nav-item"><a href="#" routerLink="/engineering">Engineering</a> </li>
-  <li class="nav-item"><a href="#" routerLink="/resume">Resume</a> </li>
-  <li class="nav-item"><a href="#" routerLink="/workshops">Workshops</a> </li>
-  <li class="nav-item"><button type="button" class="btn btn-primary">Donate</button> </li>
-</ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="https://agilecoachsolutions.com/">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFoalcIHMZEYK4qTbpKbJMT_A3xbH32TwJbTHbtZLxowwC2pB3d9h-Zvl374gvUFIyCbI&usqp=CAU"
+        height="70" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto text-primary">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+             data-toggle="dropdown" aria-expanded="false">
+            Workshops
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Psychological Safety</a></li>
+            <li><a class="dropdown-item" href="#">Impact & Story Mapping</a></li>
+            <li><a class="dropdown-item" href="#">DevOps to Transformation</a></li>
+            <li><a class="dropdown-item" href="#">Jira & Jira Align Best Practices</a></li>
+            <li><a class="dropdown-item" href="#">Scaling Agile</a></li>
+            <li><a class="dropdown-item" href="#">Business Strategy</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button"
+             data-toggle="dropdown" aria-expanded="false">
+            Consulting Solutions
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+            <li><a class="dropdown-item" href="#">Atlassian Tools Consultation</a></li>
+            <li><a class="dropdown-item" href="#">AWS Cloud Services</a></li>
+            <li><a class="dropdown-item" href="#">DevOps Engineering</a></li>
+
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button"
+             data-toggle="dropdown" aria-expanded="false">
+            About Me
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+            <li><a class="dropdown-item" href="#" routerLink="/resume">My Resume</a></li>
+            <li><a class="dropdown-item" href="#" routerLink="/engineering">DIY Projects</a></li>
+            <li><a class="dropdown-item" href="#">Social Activism</a></li>
+            <li><a class="dropdown-item" href="#">Coaching</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="links ms-auto">
+        <a href="https://www.youtube.com/channel/UCiY5OE409kza3seZoF_TKlQ"><i><fa-icon [icon]="faYoutube" style="color: red"></fa-icon></i></a>
+        <a href="https://twitter.com/jabrealj"><i><fa-icon [icon]="faTwitter" style="color: cornflowerblue"></fa-icon></i></a>
+        <a href="https://aws.amazon.com"><i><fa-icon [icon]="faAws" style="color: orange"></fa-icon></i></a>
+        <a href="https://github.com/jabrealmoe"><i><fa-icon [icon]="faGithub" style="color: black"></fa-icon></i></a>
+      </div>
+    </div>
+  </div>
 </nav>
 
 <router-outlet></router-outlet>
