@@ -1,7 +1,9 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 
-
+body {
+  padding-top: 160px;
+}
 .links a{
   font-size: 30px;
   color: #3d535f;

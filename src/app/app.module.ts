@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import {HttpClientModule} from "@angular/common/http";
 import {NgxTypedJsModule} from "ngx-typed-js";
 import {DownloadFileService} from "./download-file.service";
+import { CoachingComponent } from './coaching/coaching.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {DownloadFileService} from "./download-file.service";
     EngineeringComponent,
     ResumeComponent,
     WorkshopsComponent,
-    HomeComponent
+    HomeComponent,
+    CoachingComponent
   ],
   imports: [
     HttpClientModule,

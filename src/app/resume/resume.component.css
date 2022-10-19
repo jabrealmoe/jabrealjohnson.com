@@ -3,6 +3,8 @@
 .btns{
   width: 50%;
   position: relative;
+}
 
-  margin-bottom: 200px;
+#resume{
+  padding-top: 60px;
 }
