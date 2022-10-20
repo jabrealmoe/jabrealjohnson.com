@@ -2,13 +2,15 @@
 
 
 body {
-  padding-top: 160px;
+  padding-top: 260px;
+
 }
 .links a{
-  font-size: 30px;
   color: #3d535f;
   margin: 25px 10px;
 }
+
+
 .nav-item{
   list-style: none;
   margin-right: 2em;
