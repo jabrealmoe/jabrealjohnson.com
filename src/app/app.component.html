@@ -1,61 +1,25 @@
-<nav class="navbar navbar-expand-lg fixed-top" style="background: white">
-  <div class="container" >
-    <a class="navbar-brand" href="https://jabrealjohnson.com/">
-      <img
-        src="assets/duck-4.jpg"
-        height="70" alt="">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" style="margin-right: 1em;" id="navbarNav">
-      <ul class="navbar-nav ms-auto text-primary">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-             data-toggle="dropdown" aria-expanded="false">
-            Workshops
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Impact & Story Mapping</a></li>
-            <li><a class="dropdown-item" href="#">Jira & Jira Align Best Practices</a></li>
-            <li><a class="dropdown-item" href="#">Scaling Agile</a></li>
-            <li><a class="dropdown-item" href="#">From Project to Product in 6 Steps</a></li>
-            <li><a class="dropdown-item" href="#" routerLink="atlassian">Atlassian Stack</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button"
-             data-toggle="dropdown" aria-expanded="false">
-            Speaking Engagements
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+<div class="container">
+  <div class="row>">
+    <div class="col-md-3 col-sm-3 col-3">
+      <div class="logo">
+        <img src="assets/duck-4.jpg" height="70" alt="logo">
+      </div>
+    </div>
+    <div class="col-md-9 col-sm-9 col-9 text-end">
+      <div class="menu">
+        <ul>
+          <li>Home</li>
+          <li>Speaking Engagement</li>
+          <li>My Resume</li>
+          <li>Modern Engineering</li>
+          <li>Coaching</li>
 
-            <li><a class="dropdown-item" href="#" routerLink="pschsafety">Psychological Safety</a></li>
-            <li><a class="dropdown-item" href="#" routerLink="okrs">Objectives and Key Results</a></li>
-            <li><a class="dropdown-item" href="#" routerLink="impactstory">Impact and Story Mapping</a></li>
-            <li><a class="dropdown-item" href="#" routerLink="engineering">Modern Software Engineering</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button"
-             data-toggle="dropdown" aria-expanded="false">
-            About Me
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
-            <li><a class="dropdown-item" href="#" routerLink="resume">My Resume</a></li>
-            <li><a class="dropdown-item" href="#" routerLink="diy">DIY Projects</a></li>
-            <li><a class="dropdown-item" href="#" routerLink="socialactivism">Social Activism</a></li>
-            <li><a class="dropdown-item" href="#">Coaching</a></li>
-          </ul>
-        </li>
-      </ul>
+        </ul>
+      </div>
     </div>
   </div>
-</nav>
+
+</div>
 
 <router-outlet></router-outlet>
 <!-- footer -->
