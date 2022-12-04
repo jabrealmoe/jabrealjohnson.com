@@ -8,6 +8,7 @@ import {PsychologicalsafetyComponent} from "./psychologicalsafety/psychologicals
 import {OkrsComponent} from "./okrs/okrs.component";
 import {ImpactstorymappingComponent} from "./impactstorymapping/impactstorymapping.component";
 import {CoachingComponent} from "./coaching/coaching.component";
+import { SocialactivismComponent } from './socialactivism/socialactivism.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'okrs', component: OkrsComponent},
   {path: 'impactstory', component: ImpactstorymappingComponent},
   {path: 'coaching', component: CoachingComponent},
+  {path: 'socialactivism', component: SocialactivismComponent},
   {path: '', component: HomeComponent}
 
 ];
@@ -28,4 +30,4 @@ const routes: Routes = [
 })
 
 export class AppRoutingModule { }
-export const RoutingComponents = [HomeComponent, EngineeringComponent, ResumeComponent, WorkshopsComponent]
+export const RoutingComponents = [HomeComponent, EngineeringComponent, ResumeComponent, WorkshopsComponent, SocialactivismComponent]

@@ -12,6 +12,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {NgxTypedJsModule} from "ngx-typed-js";
 import {DownloadFileService} from "./download-file.service";
 import { CoachingComponent } from './coaching/coaching.component';
+import { SocialactivismComponent } from './socialactivism/socialactivism.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CoachingComponent } from './coaching/coaching.component';
     ResumeComponent,
     WorkshopsComponent,
     HomeComponent,
-    CoachingComponent
+    CoachingComponent,
+    SocialactivismComponent
   ],
   imports: [
     HttpClientModule,

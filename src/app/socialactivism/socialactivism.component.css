@@ -1,0 +1,16 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.btns{
+  width: 50%;
+  position: relative;
+}
+
+#social{
+  padding-top: 60px;
+}
+
+img {
+  width: 1024px;
+  height: 700px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+}

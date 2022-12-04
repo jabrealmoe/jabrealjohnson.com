@@ -4,22 +4,30 @@
 body {
   padding-top: 160px;
 }
-.links a{
+
+.links a {
   font-size: 30px;
   color: #3d535f;
   margin: 25px 10px;
 }
-.nav-item{
+
+.nav-item {
   list-style: none;
   margin-right: 2em;
 }
 
-.nav-item a{
+.nav-item a {
   text-decoration: none;
   color: black;
 }
 
-.nav-item:first-child{
+.nav-item:first-child {
   margin-right: auto;
   margin-left: 2rem;
+}
+
+
+
+#jjfooter {
+  text-align: center;
 }

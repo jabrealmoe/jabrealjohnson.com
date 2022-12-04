@@ -1,13 +1,11 @@
 <nav class="navbar navbar-expand-lg fixed-top" style="background: white;box-shadow: 2px 5px;">
-  <div class="container" >
+  <div class="container">
     <a class="navbar-brand" href="https://jabrealjohnson.com/">
-      <img
-        src="assets/jj-sitting.png"
-        height="70" alt="">
+      <img src="assets/jj-sitting.png"  style="border-radius: 50%;" height="70" alt="">
     </a>
-    <h1>Jabreal Johnson</h1>
+    <h3>Jabreal Johnson</h3>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" style="margin-right: 1em;" id="navbarNav">
@@ -16,22 +14,24 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-             data-toggle="dropdown" aria-expanded="false">
-            Workshops
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-expanded="false">
+            Workshops & Course List
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="#">Psychological Safety</a></li>
             <li><a class="dropdown-item" href="#">Impact & Story Mapping</a></li>
             <li><a class="dropdown-item" href="#">DevOps to Transformation</a></li>
-            <li><a class="dropdown-item" href="#">Jira & Jira Align Best Practices</a></li>
-            <li><a class="dropdown-item" href="#">Scaling Agile</a></li>
-            <li><a class="dropdown-item" href="#">Business Strategy</a></li>
+            <li><a class="dropdown-item" href="#">Atlassian Tools</a></li>
+            <li><a class="dropdown-item" href="#">ServiceNow Modules</a></li>
+            <li><a class="dropdown-item" href="#">Specifications, Scenarios & ATDD</a></li>
+            <li><a class="dropdown-item" href="#">Agile Model & Design</a></li>
+            <li><a class="dropdown-item" href="#">Agile Backlog Management</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button"
-             data-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-toggle="dropdown"
+            aria-expanded="false">
             Speaking Engagements
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
@@ -43,14 +43,14 @@
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button"
-             data-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown"
+            aria-expanded="false">
             About Me
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
             <li><a class="dropdown-item" href="#" routerLink="/resume">My Resume</a></li>
             <li><a class="dropdown-item" href="#" routerLink="/engineering">DIY Projects</a></li>
-            <li><a class="dropdown-item" href="#">Social Activism</a></li>
+            <li><a class="dropdown-item" href="#" routerLink="/socialactivism">Social Activism</a></li>
             <li><a class="dropdown-item" href="#">Coaching</a></li>
           </ul>
         </li>
@@ -61,16 +61,25 @@
 
 <router-outlet></router-outlet>
 <!-- footer -->
-<footer class="row py-3">
+<footer class="row py-3" id="jjfooter">
+  <h6 style="padding-left: 5em">Powered by AWS CDK Resources</h6>
   <div class="col-md-7" >
-    <ul class="nav" style="">
+    <ul class="nav">
       <li class="nav-item">
-          <div class="links" style="display: flex; padding-left: 0.5em;">
-            <a href="https://www.youtube.com/channel/UCiY5OE409kza3seZoF_TKlQ"><i><fa-icon [icon]="faYoutube" style="color: red"></fa-icon></i></a>
-            <a href="https://twitter.com/jabrealj"><i><fa-icon [icon]="faTwitter" style="color: cornflowerblue"></fa-icon></i></a>
-            <a href="https://aws.amazon.com"><i><fa-icon [icon]="faAws" style="color: orange"></fa-icon></i></a>
-            <a href="https://github.com/jabrealmoe"><i><fa-icon [icon]="faGithub" style="color: black"></fa-icon></i></a>
-          </div>
+        <div class="links" style="display: flex; padding-left: 1.5em;">
+          <a href="https://www.youtube.com/channel/UCiY5OE409kza3seZoF_TKlQ"><i>
+              <fa-icon [icon]="faYoutube" style="color: red"></fa-icon>
+            </i></a>
+          <a href="https://twitter.com/jabrealj"><i>
+              <fa-icon [icon]="faTwitter" style="color: cornflowerblue"></fa-icon>
+            </i></a>
+          <a href="https://github.com/jabrealmoe"><i>
+              <fa-icon [icon]="faGithub" style="color: black"></fa-icon>
+            </i></a>
+          <a href="https://aws.amazon.com"><i>
+              <fa-icon [icon]="faAws" style="color: orange"></fa-icon>
+            </i></a>
+        </div>
       </li>
     </ul>
   </div>
