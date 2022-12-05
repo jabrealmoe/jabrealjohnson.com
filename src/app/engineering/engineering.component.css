@@ -1,1 +1,8 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+#canvas {
+    height: auto;
+    width: 50%;
+    padding: 10px 50px;
+    border-radius: 4%;
+}

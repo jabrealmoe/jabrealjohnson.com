@@ -1,7 +1,16 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
+img {
+  width: 100%;
+}
 
-fa-icon { }
+@media screen and (max-width: 500px) {
+  .responsive{
+    padding: 0px 20px;
+  }
+  
+}
+
 #para1 {
   font-size: 40px
 }

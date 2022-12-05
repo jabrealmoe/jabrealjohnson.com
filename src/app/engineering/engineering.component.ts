@@ -1,8 +1,8 @@
-import {Component, OnInit, Renderer2} from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import * as THREE from "three";
-import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
-import {Geometry} from "three/examples/jsm/deprecated/Geometry";
+import { Geometry } from "three/examples/jsm/deprecated/Geometry";
 
 // Class within a class
 class Planet {
@@ -21,13 +21,23 @@ class Planet {
     if (this.mesh == undefined || this.mesh == null) {
       const geometry = new THREE.SphereGeometry(this.radius);
       const texture = new THREE.TextureLoader().load(this.textureFile)
-      const material = new THREE.MeshStandardMaterial({map: texture})
+      const material = new THREE.MeshStandardMaterial({ map: texture })
       this.mesh = new THREE.Mesh(geometry, material)
       this.mesh.position.x += this.positionX;
     }
     return this.mesh;
   }
+
+  createStar(){
+    const geometry = new THREE.SphereGeometry(0.25, 24, 24)
+    const material = new THREE.MeshStandardMaterial({color: 0xffff66})
+    const star = new THREE.Mesh(geometry, material);
+    const [x, y, z] = Array(3).fill(null).map(() => THREE.MathUtils.randFloatSpread(100))
+    star.position.set(x, y, z);
+    return star;
+  }
 }
+
 
 @Component({
   selector: 'app-engineering',
@@ -59,18 +69,20 @@ export class EngineeringComponent implements OnInit {
       canvas: jdoc,
       antialias: true
     });
-    renderer.setSize(window.innerWidth , window.innerHeight );
+    renderer.setSize(window.innerWidth, window.innerHeight);
 
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
     const orbit = new OrbitControls(camera, renderer.domElement)
+   
 
-    camera.position.set(-40, 140, 140);
+    camera.position.set(-40, -10, 50);
     orbit.update();
 
     const ambientLight = new THREE.AmbientLight(0x333333);
     scene.add(ambientLight);
+
 
     const spaceTexture = new THREE.TextureLoader().load("https://upload.wikimedia.org/wikipedia/commons/0/00/Center_of_the_Milky_Way_Galaxy_IV_%E2%80%93_Composite.jpg")
     scene.background = spaceTexture
@@ -157,10 +169,10 @@ export class EngineeringComponent implements OnInit {
     const EARTH_YEAR = 2 * Math.PI * (1 / 60) * (1 / 60);
     const animate = () => {
       sunMesh.rotateY(0.004);
-      mercObj.rotateY(0.02)
-      venusObj.rotation.y += EARTH_YEAR * -2;
-      earthObj.rotation.y += EARTH_YEAR;
-      marsObj.rotation.y += EARTH_YEAR * 0.5;
+      mercObj.rotateY(0.018)
+      venusObj.rotateY(EARTH_YEAR * -2)
+      earthObj.rotateY(EARTH_YEAR)
+      marsObj.rotateY(EARTH_YEAR * 0.5)
       jupiterObj.rotation.y += EARTH_YEAR * 0.8;
       saturnObj.rotation.y += EARTH_YEAR * 0.2;
       saturnRing.rotation.y += EARTH_YEAR * 0.01;
